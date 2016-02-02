@@ -1,0 +1,25 @@
+{
+  "name": "todoList",
+  "version": "1.0.0",
+  "description": "a todo list built with react",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garronmichael/react-todolist.git"
+  },
+  "keywords": [
+    "react",
+    "todo",
+    "list"
+  ],
+  "author": "Garron Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garronmichael/react-todolist/issues"
+  },
+  "homepage": "https://github.com/garronmichael/react-todolist"
+}
