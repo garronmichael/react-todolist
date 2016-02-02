@@ -6,11 +6,55 @@ var React = require('react'),
 
 var Content = React.createClass({
   displayName: 'Content',
+  getInitialState: function getInitialState() {
+    return {
+      todo: 'Your next todo...'
+    };
+  },
+  componentDidMount: function componentDidMount() {},
+  updateTodo: function updateTodo(e) {
+    this.setState({
+      todo: e.target.value
+    });
+  },
   render: function render() {
     return React.createElement(
-      'h1',
+      'div',
       null,
-      'Hello World'
+      React.createElement(
+        'h1',
+        null,
+        'Todo: '
+      ),
+      React.createElement(
+        'ul',
+        null,
+        React.createElement(
+          'li',
+          null,
+          'Buy groceries'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Walk dog'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Go to the gym'
+        ),
+        React.createElement(
+          'li',
+          null,
+          React.createElement('input', { type: 'text', value: this.state.todo, onChange: this.updateTodo }),
+          React.createElement(
+            'button',
+            null,
+            'Create new item'
+          )
+        )
+      )
     );
   }
 });
