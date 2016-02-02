@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/garronmichael/react-todolist/issues"
   },
-  "homepage": "https://github.com/garronmichael/react-todolist"
+  "homepage": "https://github.com/garronmichael/react-todolist",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
