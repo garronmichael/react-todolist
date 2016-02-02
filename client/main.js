@@ -11,5 +11,5 @@ var Content = React.createClass({
 
 ReactDom.render(
   <Content />,
-  document.getElementById( 'main' );
+  document.getElementById( 'main' )
 );
