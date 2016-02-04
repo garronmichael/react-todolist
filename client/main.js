@@ -1,6 +1,10 @@
+
+// Dependencies
 var React = require( 'react' ),
     ReactDom = require( 'react-dom' );
 
+
+// Content
 var Content = React.createClass({
   getInitialState() {
     return {
@@ -33,6 +37,7 @@ var Content = React.createClass({
   }
 });
 
+// Render
 ReactDom.render(
   <Content />,
   document.getElementById( 'main' )
